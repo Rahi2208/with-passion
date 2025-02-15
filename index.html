@@ -16,16 +16,15 @@
 
         #envelope {
             position: relative;
-            width: 80vw;
-            max-width: 280px;
-            height: auto;
-            aspect-ratio: 14 / 9;
-            border-radius: 6px;
+            width: 280px;
+            height: 180px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            margin: 0 auto;
+            top: 150px;
             background-color: var(--color-flap);
             box-shadow: 0 4px 20px rgba(0,0,0,.1);
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-
         }
 
         .front {
@@ -64,9 +63,7 @@
             box-shadow: 0 2px 26px rgba(0,0,0,.08);
             padding: 15px;
             box-sizing: border-box;
-
         }
-        
 
         .letter:after {
             content: '';
@@ -103,15 +100,10 @@
         }
 
         .envlope-wrapper {
-            max-width: 90vw;
-            height: auto;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            animation: float 3s ease-in-out infinite;
+            height: 380px;
+            margin-top: 50px;
             animation: float 3s ease-in-out infinite;
         }
-
 
         .open .flap {
             transform: rotateX(180deg);
